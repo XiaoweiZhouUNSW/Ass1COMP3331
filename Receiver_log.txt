@@ -1,0 +1,3 @@
+Amount of Data Received:430
+Number of Data Segments Received:22
+Number of duplicate segments received:8

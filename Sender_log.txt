@@ -1,0 +1,60 @@
+snd  1.992 S        0   0        0
+rcv  1.994 SA       0   0        1
+snd  1.996 A        1   0        1
+snd  1.999 D        1  20        1
+rcv  2.023 A        1   0       21 
+snd  2.024 D       21  20        1
+snd  2.025 D       21  20        1
+rcv  2.027 A        1   0       41 
+snd  2.028 D       41  20        1
+rcv  2.029 A        1   0       41 
+drop 2.030 D       41  20        1
+rcv  2.031 A        1   0       61 
+snd  2.032 D       61  20        1
+snd  2.033 D       61  20        1
+rcv  2.035 A        1   0       81 
+snd  2.036 D       81  20        1
+rcv  2.037 A        1   0       81 
+snd  2.038 D       81  20        1
+rcv  2.039 A        1   0      101 
+snd  2.040 D      101  20        1
+snd  2.041 D      101  20        1
+rcv  2.041 A        1   0      101 
+rcv  2.042 A        1   0      121 
+snd  2.043 D      121  20        1
+snd  2.044 D      121  20        1
+rcv  2.045 A        1   0      121 
+rcv  2.046 A        1   0      141 
+drop 2.046 D      141  20        1
+snd  2.047 D      141  20        1
+rcv  2.048 A        1   0      141 
+rcv  2.050 A        1   0      161 
+snd  2.051 D      161  20        1
+snd  2.052 D      161  20        1
+rcv  2.054 A        1   0      181 
+snd  2.055 D      181  20        1
+rcv  2.056 A        1   0      181 
+snd  2.057 D      181  20        1
+rcv  2.057 A        1   0      201 
+drop 2.058 D      201  20        1
+snd  2.059 D      201  20        1
+rcv  2.059 A        1   0      201 
+rcv  2.061 A        1   0      221 
+drop 2.061 D      221  20        1
+snd  2.062 D      221  20        1
+rcv  2.064 A        1   0      241 
+snd  2.065 D      241  20        1
+snd  2.066 D      241  20        1
+rcv  2.067 A        1   0      261 
+drop 2.068 D      261  10        1
+snd  2.069 D      261  10        1
+rcv  2.070 A        1   0      261 
+rcv  2.071 A        1   0      271 
+snd  2.072 F      273   0        1
+rcv  2.076 FA       1   0      276
+snd  2.077 A      276   0        2
+Amount of Data Transferred:520
+Number of Data Segments Sent:22
+Number of Packets Dropped:5
+Number of Retransmitted Segments:0
+Number of Duplicate Acknowledgements received:8
