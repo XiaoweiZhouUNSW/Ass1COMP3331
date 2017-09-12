@@ -1,6 +1,6 @@
 from socket import *
 from select import *
-from random import *
+import random
 import time
 import sys
 import segment
@@ -39,9 +39,8 @@ def receive():
     global fastretrans
 
     inf, outf, errf = select([Socket, ], [], [], 0)
-    recv_flag = False
     while inf:
-        data, SNDADDR = inf[0].recvfrom(1024)
+        data, SNDADDR = Socket.recvfrom(1024)
         seg = tr_seg(data)
         senderLog.writelines("rcv  %2.3f A %8d %3d %8d \n"
                             % (time.time() % 1*10, seg.seq_num, len(seg.data), seg.ack_num))
@@ -76,7 +75,7 @@ def PLD_send(segment):
     global seg_sent
     global seg_drop
     segment.send_time = time.time()
-    rand = random()
+    rand = random.random()
     if rand+pdrop < 1:
         Socket.sendto(segment.seg, SNDADDR)
         seg_sent += 1
@@ -131,7 +130,7 @@ MWS = MWS_byte // MSS
 timeout= int(sys.argv[6])
 pdrop = float(sys.argv[7])
 seeds = int(sys.argv[8])
-seed(seeds)
+random.seed(seeds)
 data_amount = 0
 seg_sent = 0
 seg_drop = 0
